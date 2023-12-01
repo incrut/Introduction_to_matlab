@@ -1,0 +1,13 @@
+function  output  = list_multi(A, B)
+
+len_a = numel(A);   %a new variable for length
+len_b = numel(B);
+
+new = zeros(len_a,len_b);
+for i = 1:len_a
+    for j = 1:len_b
+        new(i,j) = A(i) * B(j);
+    end
+end
+output = new;
+end
